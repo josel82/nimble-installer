@@ -8,24 +8,33 @@ This script automates the installation and basic configuration of **Nimble Strea
 
 Before running the script:
 
-1. **Update the system packages** (especially on a fresh VM):
+## **Update the system packages** (especially on a fresh VM):
 ```bash
 sudo apt-get update
 sudo apt-get dist-upgrade -y
 ```
 
-2. Make the script executable:
+## **Note**
+These are dependecies which aren't met in newer versions of ubuntu
+```bash
+wget http://archive.ubuntu.com/ubuntu/pool/universe/libz/libzip/libzip5_1.5.1-0ubuntu1_amd64.deb
+wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.0g-2ubuntu4_amd64.deb
+wget http://archive.ubuntu.com/ubuntu/pool/universe/libz/libzip/libzip5_1.5.1-0ubuntu1_amd64.deb
+sudo dpkg -i libzip5_1.5.1-0ubuntu1_amd64.deb libssl1.1_1.1.0g-2ubuntu4_amd64.deb libzip5_1.5.1-0ubuntu1_amd64.deb
+```
+
+## **Make the script executable:**
 ```bash
 chmod +x install_nimble.sh
 ```
 
-3. Running the script
+## **Running the script**
 Run the script with `sudo`:
 ```bash
 sudo ./install_nimble.sh
 ```
 
-4. Registering with WMS Panel
+## **Registering with WMS Panel**
 After installing Nimble, register your server with [WMSPanel](https://wmspanel.com/account/sign_up):
 Create an account (if you haven’t already).
 On the server, run the registration utility and enter your WMSPanel credentials:
@@ -33,7 +42,7 @@ On the server, run the registration utility and enter your WMSPanel credentials:
 sudo /usr/bin/nimble_regutil
 ```
 
-5. After Installation
+## **After Installation**
 Reboot the server:
 ```bash
 sudo reboot
