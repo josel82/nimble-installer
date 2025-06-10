@@ -1,6 +1,8 @@
 # Nimble Streamer Installation Script (Ubuntu 20.04)
 
-This script automates the installation and basic configuration of **Nimble Streamer** on **Ubuntu 20.04**.
+This script automates the installation and basic configuration of **Nimble Streamer** on.
+- install_nimble-20.04.sh  -  for Ubuntu 20.04
+- install_nimble-22.04.sh  -  for Ubuntu 22.04
 
 ---
 
@@ -12,15 +14,6 @@ Before running the script:
 ```bash
 sudo apt-get update
 sudo apt-get dist-upgrade -y
-```
-
-## **Note**
-These are dependecies which aren't met in newer versions of ubuntu
-```bash
-wget http://archive.ubuntu.com/ubuntu/pool/universe/libz/libzip/libzip5_1.5.1-0ubuntu1_amd64.deb
-wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.0g-2ubuntu4_amd64.deb
-wget http://archive.ubuntu.com/ubuntu/pool/universe/libz/libzip/libzip5_1.5.1-0ubuntu1_amd64.deb
-sudo dpkg -i libzip5_1.5.1-0ubuntu1_amd64.deb libssl1.1_1.1.0g-2ubuntu4_amd64.deb libzip5_1.5.1-0ubuntu1_amd64.deb
 ```
 
 ## **Make the script executable:**
