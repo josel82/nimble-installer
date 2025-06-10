@@ -1,8 +1,9 @@
 #!/bin/bash
 
-#############################
-# Run this script with sudo #
-#############################
+###############################################################
+# This script installs Nimble Streamer server on Ubuntu 20.04 #
+# Run this script with sudo                                   #
+###############################################################
 
 set -e
 set -o pipefail  # Exit if any command in a pipeline fails
