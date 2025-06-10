@@ -18,13 +18,13 @@ sudo apt-get dist-upgrade -y
 
 ## **Make the script executable:**
 ```bash
-chmod +x install_nimble.sh
+chmod +x install_nimble-20.04.sh
 ```
 
 ## **Running the script**
 Run the script with `sudo`:
 ```bash
-sudo ./install_nimble.sh
+sudo ./install_nimble-20.04.sh
 ```
 
 ## **Registering with WMS Panel**
